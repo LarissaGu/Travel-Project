@@ -2,35 +2,40 @@ body {
   font-family: "Poppins";
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 h1 {
   font-weight: 700;
   font-size: 96px;
   margin: 0;
 }
 
-h2 {
-  font-weight: 900;
-  font-size: 24px;
-  margin: 0;
-}
-
-h3 {
+header h2 {
   font-weight: 400;
   font-size: 40px;
   margin: 0 0 80px 0;
 }
 
+header h3 {
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
 header {
   text-align: center;
-  max-width: 1200px;
   margin: 0 auto;
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("/img/madeira_mountains.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("../img/madeira_mountains.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 120px 0px;
+  padding: 280px 0px;
 }
 
 header a {
@@ -44,12 +49,8 @@ header a {
   padding: 16px 32px;
 }
 
-.hero {
-  margin: 80px 0 64px 0;
-}
-
 .about-madeira {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;

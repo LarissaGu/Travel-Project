@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins";
-  background: #18230c;
+  background: rgba(52, 99, 87, 0.9);
+  margin: 0;
 }
 
 .container {
@@ -8,9 +9,14 @@ body {
   margin: 0 auto;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 h1 {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 92px;
   line-height: 1.2;
   margin: 0;
 }
@@ -51,16 +57,60 @@ header a {
   padding: 16px 32px;
 }
 
+footer {
+  background-image: linear-gradient(
+      rgba(52, 99, 87, 0.9),
+      rgba(52, 99, 87, 0.9)
+    ),
+    url("../img/madeira_footer.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 100px 140px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+footer a {
+  color: #fff;
+  opacity: 0.6;
+}
+
 .about-madeira {
-  max-width: 1200px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
 }
 
 .about-madeira img {
-  max-width: 500px;
+  max-width: 300px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
 }
 
 @media (max-width: 800px) {
@@ -85,5 +135,10 @@ header a {
   header a {
     font-size: 12px;
     padding: 8px 16px;
+  }
+
+  .about-madeira {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
   }
 }

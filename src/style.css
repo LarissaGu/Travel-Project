@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   background: rgba(40, 55, 57, 0.9);
   margin: 0;
 }
@@ -108,16 +108,12 @@ main p {
   margin-top: 48px;
 }
 
-.card-header.two-column-grid {
-  grid-gap: 0;
-}
-
 .card-body {
-  padding: 32px 20px 20px 20px;
+  padding: 20px;
 }
 
 .card-footer {
-  padding: 0px 32px 32px 32px;
+  padding: 0px 32px 24px 32px;
 }
 
 .btn {
@@ -176,16 +172,11 @@ footer a {
 }
 
 .img-responsive {
-  width: 100%;
+  max-width: 100%;
 }
 
 .text-center {
   text-align: center;
-}
-
-.embed {
-  max-width: 100%;
-  aspect-ratio: 1 / 1;
 }
 
 .two-column-grid {
@@ -206,7 +197,7 @@ footer a {
   grid-gap: 64px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   header {
     padding: 120px 0;
   }
@@ -239,14 +230,5 @@ footer a {
   .footer-grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
-  }
-
-  .card-header img {
-    display: none;
-  }
-
-  .embed {
-    aspect-ratio: 16 / 9;
-    width: 100%;
   }
 }

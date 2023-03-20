@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins";
-  background: rgba(52, 99, 87, 0.9);
+  background: rgba(40, 55, 57, 0.9);
   margin: 0;
 }
 
@@ -9,9 +9,15 @@ body {
   margin: 0 auto;
 }
 
+main {
+  background: #fff;
+  color: #283739;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 h1 {
@@ -38,7 +44,10 @@ header {
   text-align: center;
   margin: 0 auto;
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(
+      rgba(40, 55, 57, 0.5),
+      rgba(40, 55, 57, 0.4)
+    ),
     url("../img/madeira_mountains.JPG");
   background-size: cover;
   background-position: center;
@@ -47,7 +56,7 @@ header {
 }
 
 header a {
-  color: #272044;
+  color: #283739;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -57,16 +66,39 @@ header a {
   padding: 16px 32px;
 }
 
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  opacity: 0.3;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
 footer {
   background-image: linear-gradient(
-      rgba(52, 99, 87, 0.9),
-      rgba(52, 99, 87, 0.9)
+      rgba(40, 55, 57, 0.9),
+      rgba(40, 55, 57, 0.9)
     ),
     url("../img/madeira_footer.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 100px 140px;
 }
 
 footer ul {
@@ -97,23 +129,23 @@ footer a {
   opacity: 0.6;
 }
 
-.about-madeira {
+.two-column-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 64px;
 }
 
-.about-madeira img {
-  max-width: 300px;
+.img-responsive {
+  max-width: 100%;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 64px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   header {
     padding: 120px 0;
   }
@@ -137,7 +169,16 @@ footer a {
     padding: 8px 16px;
   }
 
-  .about-madeira {
+  section {
+    padding: 50px 20px;
+  }
+
+  .two-column-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  .footer-grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }

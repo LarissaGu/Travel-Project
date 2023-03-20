@@ -47,3 +47,15 @@ header a {
 .hero {
   margin: 80px 0 64px 0;
 }
+
+.about-madeira {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 64px;
+}
+
+.about-madeira img {
+  max-width: 500px;
+}

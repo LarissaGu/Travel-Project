@@ -188,6 +188,10 @@ footer a {
   aspect-ratio: 1 / 1;
 }
 
+.gallery {
+  padding: 48px 0;
+}
+
 .two-column-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
